@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ClassDiagrams.EnumerableValuesProvider" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.25" Width="2.5" />
+    <AssociationLine Name="Debugger" Type="ClassDiagrams.Debugger">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.95" Y="0.225" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Debugger" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassDiagrams.LazyListView">
+    <Position X="0.5" Y="2.25" Width="2.25" />
+    <InheritanceLine Type="ClassDiagrams.AA.ListView" FixedToPoint="true">
+      <Path>
+        <Point X="1.375" Y="1.368" />
+        <Point X="1.375" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="VirtualizingSource" Type="ClassDiagrams.VirtualizingIEnumerable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.438" Y="2.25" />
+        <Point X="2.438" Y="1.522" />
+        <Point X="4" Y="1.522" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.183" Y="0.07" Height="0.182" Width="1.36" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="VirtualizingSource" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassDiagrams.VirtualizingIEnumerable">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <AssociationLine Name="ValueProvider" Type="ClassDiagrams.IEnumerableValuesProvider&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.265" Y="0.206" Height="0.182" Width="1.17" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ValueProvider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassDiagrams.Debugger" Collapsed="true">
+    <Position X="4.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagrams.AA.ListView">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ClassDiagrams.IEnumerableValuesProvider&lt;T&gt;">
+    <Position X="4" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
