@@ -1,0 +1,123 @@
+CodeCompletionItemProvider.CreateCompletionItemList()
+has 2 overrides (NRefactoryCtrlSpaceCompletionItemProvider, DotCodeCompletionItemProvider), but my window shows only one!
+
+AbstractProject.GetAmbience() has overrides (e.g. in CSharpProject) but none are shown!
+
+
+no xml comments shown in CC for system types (Reference assemblies)?
+
+
+
+ctrl+click at AddRefactoringItemsToTheBeginning in RefactoringMenuBuilder crashes!
+
+add check for null inserts string.IsNullOrEmpty for strings
+
+remove the "Go to definition" from the menu if we're at the definition currently
+
+Improve CC for generics so that it does not insert List<T>
+
+Object graph visualizer shows box headers with object type (object.ToString in tooltip)
+
+using Collections;
+using Collections.Generic;
+select IList<T> from CC
+
+
+Tooltip bug: SnippetContainerElement.Insert - expand debugger tooltip to crash the tooltip
+Tooltip not shown: variable.Property where variable is an interface or base class, overrides?
+Tooltip not shown: static RunFindReferences - ParserService.LoadSolutionProjectsThreadRunnings
+Tooltip bug: ClassBookmarkMenuBuilder.GoToBase() baseClass.ClassInheritanceTree does not show contents of the array
+Trying to see items of ObservableCollection crashes tooltip
+String in tooltips shouldn't show Collection vis and Object graph vis, or at least not crash them
+Tooltip hover over "this" keyword does nothing?
+Tooltip for ObservableCollection (of ISomething) totally broken
+Tooltip for LINQ queries, Collection visualizer
+Search // BUG Find references in SharpDevelop code
+
+Copy as html in Context menu (Syntax highlighter matching VS colors?)
+
+
+
+snippet for lazy property
+snippet for foreach
+"cast" snippet
+if (a is T) {
+	(T)a
+}
+"castas"
+var b = a as T;
+if (b != null) {
+
+}
+
+
+
+
+open SolutionItems/Performance1.psess
+
+
+
+
+could ContextActions be easy to make work for other languages?
+(using IResolver etc.?, independent of NRefactory)
+NRefactory is a library for C# and VB, SharpDevelop prepares some facilities (like NRefactoryResolver)
+for LanguageBindings
+
+
+
+
+
+Visual assist: Quick class browser has a textbox where you can type and the combobox content gets filtered.
+Find references window distinguishes reads / writes:
+Visual assist distinguishes by coloring the symbol.
+Could be distinguised by 2 expandable groups.
+
+popups - dont't show classes that have no code (or show them disabled)
+
+ReSharper:
+remove redundant event handler new EventHandler(TimerMoveTick); --> refactor the insertion
+convert to initializer expression
+obj.dada =...
+obj.dadsa =...
+
+it´s not really useful anymore with language support for ¨var¨, but I´m thinking it could be useful to have a feature to right-click on ¨var¨, select some menu-entry and have SharpDevelop replace ¨var¨ with the concrete type (if possible)
+
+
+resources - use StringResourceTool:
+
+
+
+
+for CtrlSpaceResolveHelper.AddReferencedProjectContents, I don't get why you need "GetAllContents", which you then filter for non-namespaces
+I think you could simple use "result.AddRange(projectContent.Classes);
+- NO, because as it is now, we call DefaultProjectContent.AddNamespaceContentsClass with logic we would have to duplicate / expose.
+  -> We prefer to expose GetAllContents()
+
+the CC for "System.DateTimeKind." should contain only "Local", "Unspecified", "Utc"; we should hide all the inherited methods
+it's valid to call LINQ methods on strings (they're IEnumerable<char>), but few people want to do that
+
+
+
+
+Promote to constant:
+Focus "5" in code, option to promote it to constant.
+
+
+
+CC improvements (ReSharper like):
+http://weblogs.asp.net/scottgu/archive/2009/10/22/vs-2010-code-intellisense-improvements-vs-2010-and-net-4-0-series.aspx
+
+
+
+
+
+
+
+GoTo dialog does not search private methods (enter RunFindRefences)
+
+PERF
+CodeCompletionList.CamelCaseMatch
+
+
+// BUG object graph visualizer - expand anything
+at Debugger.MetaData.DebugMethodInfo.GetBackingField() in d:\code\cs\SharpDevelop40Release\trunk\SharpDevelop\src\AddIns\Debugger\Debugger.Core\MetaData\DebugMethodInfo.cs:line 329
