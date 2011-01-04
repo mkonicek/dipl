@@ -7,6 +7,9 @@ AbstractProject.GetAmbience() has overrides (e.g. in CSharpProject) but none are
 no xml comments shown in CC for system types (Reference assemblies)?
 
 
+CheckMemberNotNull - try it in AbstractProject.LanguagePropeties getter - checks namespaces for nulls also.
+
+
 
 ctrl+click at AddRefactoringItemsToTheBeginning in RefactoringMenuBuilder crashes!
 
