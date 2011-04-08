@@ -1,0 +1,4 @@
+Fix grid window sizing, error messages.
+Remember window sizes (and positions)! (watch out for second monitor..)
+
+Object graph replay animation.
